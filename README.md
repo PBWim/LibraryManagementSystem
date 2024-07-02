@@ -37,4 +37,3 @@ Ensure the PublishedDate is not in the future. <br/>
 Search Functionality: Implement a search feature to filter books by title or author. <br/>
 Pagination: Add pagination to the list of books. <br/>
 User Authentication: Add user authentication and authorization to restrict access to certain actions. <br/>
-Test row
