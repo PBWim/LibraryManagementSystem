@@ -29,6 +29,11 @@ Details: Display details of a specific book. <br/>
 Delete: Confirmation page to delete a book. <br/>
 
 ### Validation:
-Ensure that all fields are required.<br/>
+Ensure that all fields are required. <br/>
 Validate that the ISBN is in the correct format. <br/>
 Ensure the PublishedDate is not in the future. <br/>
+
+### Additional Features (Optional)
+Search Functionality: Implement a search feature to filter books by title or author. <br/>
+Pagination: Add pagination to the list of books. <br/>
+User Authentication: Add user authentication and authorization to restrict access to certain actions. <br/>
