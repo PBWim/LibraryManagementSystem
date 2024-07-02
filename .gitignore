@@ -1,0 +1,42 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# Temporary files
+*.suo
+*.user
+*.cache
+
+# Visual Studio specific files
+*.vbproj
+*.csproj
+*.sln
+*.filters
+
+# Testing and debugging
+**/TestResults/
+**/coverage/
+
+# NuGet packages
+**/packages/
+
+# Secret files (not recommended for version control)
+*.secrets
+*.pfx
+*.snk
+
+# IDE specific settings (consider specific settings based on your IDE)
+[Bb]in/**.DotSettings*  # For Visual Studio's solution/project user settings
+[Bb]in/**.GlobalSettings* # For Visual Studio's global settings
+
+# Editor temporary/backup files (adjust based on your editor)
+*~
+*.tmproj
+*.sln.BACKUP
+*.userprefs
+
+# MSBuild logs
+*.log
+
+# Ignore any folder starting with "_" (common for private or temporary project data)
+**/_*
