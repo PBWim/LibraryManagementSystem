@@ -1,0 +1,57 @@
+﻿@model Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Book Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PublishedDate)
+        </dd>
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Update", "Update", new { id = Model.BookId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.BookId })
+</p>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

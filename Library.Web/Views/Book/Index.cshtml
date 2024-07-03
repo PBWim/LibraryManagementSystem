@@ -1,0 +1,37 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Books";
+}
+
+<a class="btn text-dark" asp-controller="book" asp-action="create">Create Book</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>ISBN</th>
+            <th>Published Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.BookId</td>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.Genre</td>
+                <td>@book.ISBN</td>
+                <td>@book.PublishedDate.ToString("d")</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = book.BookId }) |
+                    @Html.ActionLink("Update", "Update", new { id = book.BookId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = book.BookId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
